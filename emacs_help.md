@@ -1,4 +1,10 @@
-==========================================================
+========Location of the init.el file========-============
+Windows 10   : c:\users\<login>\AppData\Roaming\.emacs.d\init.el
+Ubuntu 18.04 : ~/.emacs
+=========================================================
+
+==============Some help commands=========================
+
 C x C f   : To Create a new file OR To Open existing file.
 C x 3     : Add a new Buffer right of active window.
 C x 1     : Close all Buffer except active
@@ -33,8 +39,14 @@ C <space> : Mark set (select area for kill)
 C k	  : kill(cut) the selected region
   y       : yank(paste) the killed area at the place where the Point(cursor) is present.
 
+--------------------------------
 
+C x 0     : close active window.
+    1     : close all windows except active window.
+    2     : split active window vertically.
+    3	  : split active window horizontally.
+    o	  : activate next window.
+--------------------------------
 
-
-
+M  x eshell : Opens emacs own shell.
 

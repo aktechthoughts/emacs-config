@@ -1,0 +1,9 @@
+cd /plink::
+cd projects
+cd projects
+ls 
+ls -rlt 
+cd projects
+python
+python3
+exit

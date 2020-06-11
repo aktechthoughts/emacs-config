@@ -37,6 +37,7 @@ region	  : area to cut/copy/paste
 C <space> : Mark set (select area for kill)
           : Mark deactivated.
 C k	  : kill(cut) the selected region
+M w	  : copy the selected region.
   y       : yank(paste) the killed area at the place where the Point(cursor) is present.
 
 --------------------------------

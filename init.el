@@ -47,3 +47,26 @@
   (kill-buffer (current-buffer)))
 
 (global-set-key (kbd "<f5>") 'my/my-kill); kill buffer
+
+;; All the files opened in emacs keep '#file-name#' creates a file in the directory
+;; where the file is stored. A file file-name~ is created as backup file.
+;; These default setting can be overriden using below.
+;; https://stackoverflow.com/questions/12031830/what-are-file-and-file-and-how-can-i-get-rid-of-them
+;; save no-littering.el from https://github.com/emacscollective/no-littering to "~/.emacs.d/lisp/" 
+;; directory
+
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(require 'no-littering)
+(setq auto-save-file-name-transforms
+      `((".*" ,(no-littering-expand-var-file-name "auto-save/") t)))
+
+;; remove tool bar from the screen
+(tool-bar-mode -1) 
+
+;; full screen on initilization
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
+;; split window vertically on initialization
+
+(split-window-horizontally)
